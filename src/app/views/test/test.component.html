@@ -1,0 +1,22 @@
+<div class="row">
+    <div class="col-md-12 pad-10">
+        <button type="submit" class="btn btn-primary" (click)="goToAddMention()">
+        <span class="glyphicon glyphicon-floppy-disk"></span> Ajout Mention
+      </button>
+    </div>
+</div>
+
+<table class="table table-striped">
+    <thead>
+        <tr>
+            <th>Libellé</th>
+            <th>Etat</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr *ngFor="let mention of mentions">
+            <td>{{ mention.libelle_mention }}</td>
+            <td>{{ mention.etat_mention }}</td>
+        </tr>
+    </tbody>
+</table>

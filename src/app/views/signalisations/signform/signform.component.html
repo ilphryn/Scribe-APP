@@ -1,0 +1,175 @@
+<div class="container col-md-12">
+    <!--  -->
+    <form class="signform">
+        <div class="form-row" id="topinfo">
+            <p>Nouvelle Tâche • id: {{idTache}}</p>
+        </div>
+        <div class="form-row">
+            <div class="col-md-4 leftside">
+                <!--Origine form-->
+                <div class="origingroup col-md-12">
+                    <div class="form-row">
+                        <div class="form-group col-md-5">
+                            <label for="origine">Origine</label>
+                            <select class="custom-select custom-select-md" id="origine">
+                                <option selected></option>
+                                <option value="1">Call Center</option>
+                                <option value="2">Hotline</option>
+                                <option value="3">Prestataire CIC</option>
+                              </select>
+                        </div>
+                        <div class="form-group col-md-7">
+                            <label for="initiateur">Initiateur</label>
+                            <input type="text" class="form-control form-control-md" id="initiateur" placeholder="entité ou personne..">
+                        </div>
+                    </div>
+                    <div class="form-row">
+                        <div class="form-group col-md-12">
+                            <label for="nomClient">Nom client</label>
+                            <input type="text" class="form-control form-control-md" id="nomClient" placeholder="Shinji IKARI">
+                        </div>
+                    </div>
+                    <div class="form-row">
+                        <div class="form-group col-md-7">
+                            <label for="contactClient">Contact client</label>
+                            <input type="text" class="form-control form-control-md" id="contactClient" placeholder="08358171..">
+                        </div>
+                        <div class="form-group col-md-5">
+                            <label for="numDossier">N° Dossier</label>
+                            <input type="text" class="form-control form-control-md" id="numDossier" placeholder="id w4, Ndem Gaia..">
+                        </div>
+                    </div>
+                </div>
+                <!--Dates form-->
+                <div class="dategroup col-md-12">
+                    <div class="form-row">
+                        <div class="form-group col-md-6">
+                            <label for="dateSignalisation">Date de signalisation</label>
+                            <input type="date" class="form-control form-control-md" id="dateSignalisation">
+                        </div>
+                        <div class="form-group col-md-6">
+                            <label for="dateReception">Date de reception</label>
+                            <input type="datetime" class="form-control form-control-md" id="dateReception">
+                        </div>
+                    </div>
+                    <div class="form-row">
+
+                        <div class="form-group col-md-6">
+                            <label for="dateTransmission">Date de transmission</label>
+                            <input type="datetime" class="form-control form-control-md" id="dateTransmission">
+                        </div>
+                        <div class="form-group col-md-6">
+                            <label for="dateEcheance">Date d'échéance</label>
+                            <input type="datetime" class="form-control form-control-md" id="dateEcheance">
+                        </div>
+                    </div>
+                    <div class="form-row">
+
+                        <div class="form-group col-md-12">
+                            <label for="dateReleve">Date de relève</label>
+                            <input type="datetime" class="form-control form-control-md" id="dateReleve">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!--Main form-->
+            <div class="col-md-8">
+                <div class="maingroup">
+                    <div class="form-row">
+                        <div class="form-group col-md-6">
+                            <label for="idLigne">Référence Ligne</label>
+                            <input type="text" class="form-control form-control-md" id="idLigne" placeholder="ND, login, Ndem..">
+                        </div>
+                        <div class="form-group col-md-3">
+                            <label for="mention">Mention</label>
+                            <select class="custom-select custom-select-md" id="mention">
+                                    <option selected></option>
+                                    <option value="1">VIP</option>
+                                    <option value="2">FFCI</option>
+                                    <option value="3">SANTE</option>
+                                </select>
+                        </div>
+                        <div class="form-group form-group col-md-3">
+                            <label for="statut">Statut</label>
+                            <select class="custom-select custom-select-md" id="statut">
+                                    <option selected>En Cours</option>
+                                    <option value="1">OK</option>
+                                </select>
+                        </div>
+                    </div>
+                    <div class="form-row">
+                        <div class="col-md-4">
+                            <div class="form-group">
+                                <label for="typeReclamation">Type de réclamation</label>
+                                <select class="custom-select custom-select-md" id="typeReclamation">
+                                <option selected></option>
+                                <option value="1">Maintenance ADSL</option>
+                                <option value="2">Production TLP</option>
+                                <option value="3">Transfert FTTH</option>
+                        </select>
+                            </div>
+                            <div class="form-group">
+                                <label for="remontee">Rémontée</label>
+                                <select class="custom-select custom-select-md" id="remontee">
+                                <option selected></option>
+                                <option value="1">absence de connexion ADSL</option>
+                                <option value="2">installation non effective</option>
+                                <option value="3">portabilité non effective</option>
+                        </select>
+                            </div>
+                        </div>
+                        <div class="col-md-8">
+                            <div class="form-group">
+                                <label for="detailsSignalisation">Détails de signalisation</label>
+                                <textarea class="form-control mytextarea" id="detailsSignalisation" rows="4" placeholder="plus de détails sur la signalisation.."></textarea>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="form-row">
+                        <div class="form-group col-md-7">
+                            <label for="analyse">Analyse</label>
+                            <textarea class="form-control" id="analyse" rows="2" placeholder="analyse effectuée.."></textarea>
+                        </div>
+                        <div class="form-group col-md-5">
+                            <label for="constitution">Constitutions</label>
+                            <textarea class="form-control" id="constitution" rows="2" placeholder="exemple : AGR005 D01 9/5 - T093 2/6.."></textarea>
+                        </div>
+                    </div>
+                    <div class="form-row">
+                        <div class="col-md-8">
+                            <div class="form-group">
+                                <label for="rtIntervention">Retour intervention</label>
+                                <textarea class="form-control mytextarea" id="rtIntervention" rows="3" placeholder="CR intervention.."></textarea>
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="form-group">
+                                <label for="causeRoot">Cause root</label>
+                                <select class="custom-select custom-select-md" id="causeRoot">
+                                    <option selected></option>
+                                    <option value="1">installation interne client</option>
+                                    <option value="2">câble coupé ou endommagé</option>
+                                    <option value="3">indisponibilité client</option>
+                            </select>
+                            </div>
+                            <div class="form-group">
+                                <label for="ptBlocage">Point de blocage</label>
+                                <input type="text" class="form-control form-control-md" id="ptBlocage">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label for="observation">Observation</label>
+                        <textarea class="mytextarea-2 form-control" id="observation" rows="2" placeholder=".."></textarea>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+        <div class="btnform row">
+            <button type="submit" class="btn btn-secondary btnsubmit">Enregistrer</button>
+            <button type="submit" class="btn btn-secondary btncancel">Annuler</button>
+        </div>
+    </form>
+
+</div>

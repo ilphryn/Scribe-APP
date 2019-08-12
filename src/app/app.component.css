@@ -1,0 +1,250 @@
+/* Header
+************************** */
+
+.header {
+    /* background: #49494b; */
+    background: #2f353a;
+    font-size: 14px;
+    color: #ffffff;
+    height: 50px;
+    position: fixed;
+    width: 100%;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    z-index: 999;
+    min-width: max-content;
+}
+
+.header-left {
+    font-size: 35px;
+    font-weight: 600;
+    padding: 0px 30px;
+    font-family: 'montserratbold';
+}
+
+.header-right {
+    padding: 15px 40px;
+    font-size: 13px;
+}
+
+span {
+    font-size: 13px;
+    font-weight: bold;
+    color: #FE9315;
+}
+
+span:hover {
+    /* color: #FE9315; */
+    cursor: pointer;
+}
+
+
+/* APP Body 
+************************** */
+
+.app-body {
+    padding-top: 50px;
+    height: 100%;
+    min-height: 100%;
+    display: flex;
+    flex-direction: row;
+}
+
+fa-icon:hover {
+    color: #FE9315;
+}
+
+
+/* SideBar
+************************** */
+
+.sidebar {
+    font-family: 'montserrat_mediumregular';
+    background-color: #E2E2E2;
+    width: 4%;
+    text-align: center;
+    font-size: 28px;
+    height: 100%;
+    font-weight: bold;
+    color: #2f353a;
+    text-transform: uppercase;
+    padding: 6px 15px;
+    display: flex;
+    flex-direction: column;
+    min-width: min-content;
+    position: relative;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.sidebar p {
+    margin-bottom: 0px;
+}
+
+
+/* Menus */
+
+.top-menu {
+    margin-top: 120px;
+    flex: 1;
+}
+
+.bottom-menu {
+    font-size: 26px;
+    color: #6c6c6c;
+    cursor: pointer;
+}
+
+.bottom-menu:hover {
+    color: #FF2A01;
+}
+
+.bottom-menu fa-icon:hover {
+    color: #FF2A01;
+}
+
+.sidebar a {
+    margin-left: 5px;
+}
+
+#sider .i-menu {
+    display: none;
+}
+
+
+/* element active style */
+
+#sider.active {
+    width: 15%;
+    text-align: left;
+    font-size: 14px;
+}
+
+#sider.active .i-menu {
+    display: initial;
+}
+
+.bottom-menu.active {
+    font-size: 13px;
+}
+
+
+/* Dropdown Item  */
+
+.dropright {
+    margin: 15px 0px;
+}
+
+.dropright:hover {
+    color: #FE9315;
+    cursor: pointer;
+}
+
+.dropdown-item {
+    font-size: 13px;
+    text-transform: none;
+}
+
+.dropdown-divider {
+    border-top: 1px solid #f8fafa;
+}
+
+
+/* Burger Bouton */
+
+.hamburger .line {
+    width: 30px;
+    height: 4px;
+    background-color: #838791AB;
+    display: block;
+    margin: 4px auto;
+    -webkit-transition: all 0.3s ease-in-out;
+    -o-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+}
+
+.hamburger {
+    float: right;
+}
+
+.hamburger:hover {
+    cursor: pointer;
+}
+
+#hamburger-1.is-active .line:nth-child(2) {
+    opacity: 0;
+}
+
+#hamburger-1.is-active .line:nth-child(1) {
+    -webkit-transform: translateY(8px) rotate(45deg);
+    -ms-transform: translateY(8px) rotate(45deg);
+    -o-transform: translateY(8px) rotate(45deg);
+    transform: translateY(8px) rotate(45deg);
+    width: 20px;
+}
+
+#hamburger-1.is-active .line:nth-child(3) {
+    -webkit-transform: translateY(-8px) rotate(-45deg);
+    -ms-transform: translateY(-8px) rotate(-45deg);
+    -o-transform: translateY(-8px) rotate(-45deg);
+    transform: translateY(-8px) rotate(-45deg);
+    width: 20px;
+}
+
+
+/* Main Body
+************************** */
+
+.main-body {
+    background-color: #fdfdfd;
+    flex: 1;
+    color: rgb(140, 50, 50);
+    display: flex;
+    flex-direction: column;
+}
+
+
+/* Sub Header */
+
+.subheader {
+    /* background-color: #f0f3f5; */
+    background-color: #fdfdfd;
+    right: 0%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    border-bottom: solid #E5E5E5 1px;
+}
+
+.subheader p {
+    margin-bottom: 0px;
+}
+
+.navpath {
+    flex: 1;
+    font-size: 15px;
+    color: #6c6c6c;
+}
+
+.breadcrumb {
+    border-radius: 0px;
+    background-color: transparent;
+    margin-bottom: 0px;
+    padding: .75rem 1rem;
+}
+
+.navbtn {
+    font-size: 18px;
+    float: right;
+    padding-right: 25px;
+}
+
+.navbtn a {
+    color: #6c6c6c;
+    margin-left: 10px;
+}
+
+
+/* App content */
+
+.app-content {
+    padding: 10px;
+}

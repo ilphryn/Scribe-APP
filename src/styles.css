@@ -1,1 +1,113 @@
 /* You can add global styles to this file, and also import other style files */
+
+span:hover {
+    color: #FE9315;
+}
+
+
+/*
+*
+*
+STYLE DE POLICE - FONTS */
+
+html,
+body {
+    font-family: 'montserratregular';
+    font-size: 12px;
+    height: 100%;
+    width: 100%;
+}
+
+.spinner-grow {
+    position: absolute;
+    top: 45%;
+    color: #FE9315;
+    width: 6rem;
+    height: 6rem;
+}
+
+@font-face {
+    font-family: 'montserratbold';
+    src: url('./assets/fonts/montserrat/montserrat-bold-webfont.woff2') format('woff2'), url('./assets/fonts/montserrat/montserrat-bold-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'montserratbold_italic';
+    src: url('./assets/fonts/montserrat/montserrat-bolditalic-webfont.woff2') format('woff2'), url('./assets/fonts/montserrat/montserrat-bolditalic-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'montserrat_extralightregular';
+    src: url('./assets/fonts/montserrat/montserrat-extralight-webfont.woff2') format('woff2'), url('./assets/fonts/montserrat/montserrat-extralight-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'montserrat_extralightitalic';
+    src: url('./assets/fonts/montserrat/montserrat-extralightitalic-webfont.woff2') format('woff2'), url('./assets/fonts/montserrat/montserrat-extralightitalic-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'montserrat_lightregular';
+    src: url('./assets/fonts/montserrat/montserrat-light-webfont.woff2') format('woff2'), url('./assets/fonts/montserrat/montserrat-light-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'montserrat_lightitalic';
+    src: url('./assets/fonts/montserrat/montserrat-lightitalic-webfont.woff2') format('woff2'), url('./assets/fonts/montserrat/montserrat-lightitalic-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'montserrat_mediumregular';
+    src: url('./assets/fonts/montserrat/montserrat-medium-webfont.woff2') format('woff2'), url('./assets/fonts/montserrat/montserrat-medium-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'montserrat_mediumitalic';
+    src: url('./assets/fonts/montserrat/montserrat-mediumitalic-webfont.woff2') format('woff2'), url('./assets/fonts/montserrat/montserrat-mediumitalic-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'montserratregular';
+    src: url('./assets/fonts/montserrat/montserrat-regular-webfont.woff2') format('woff2'), url('./assets/fonts/montserrat/montserrat-regular-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'montserratitalic';
+    src: url('./assets/fonts/montserrat/montserrat-regularitalic-webfont.woff2') format('woff2'), url('./assets/fonts/montserrat/montserrat-regularitalic-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'montserrat_semiboldregular';
+    src: url('./assets/fonts/montserrat/montserrat-semibold-webfont.woff2') format('woff2'), url('./assets/fonts/montserrat/montserrat-semibold-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'montserrat_semibolditalic';
+    src: url('./assets/fonts/montserrat/montserrat-semibolditalic-webfont.woff2') format('woff2'), url('./assets/fonts/montserrat/montserrat-semibolditalic-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+html, body { height: 100%; }
+body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }

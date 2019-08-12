@@ -1,0 +1,42 @@
+.contain {
+    height: 100%;
+    width: 100%;
+    color: #2f353a;
+    font-size: 13px;
+    margin-top: 50px;
+    margin-left: 0px;
+}
+
+.row {
+    margin-right: 0px;
+    margin-left: 0px;
+}
+
+.nav {
+    /* background-color: blue; */
+}
+
+.tab-content {
+    /* background-color: brown; */
+}
+
+.nav-link {
+    color: #2f353a;
+}
+
+.nav-link.active {
+    background-color: #f5a952;
+    color: #FFFFFF;
+    text-align: right;
+}
+
+.table {
+    margin-top: 3rem;
+}
+
+
+/* Checkbox readonly */
+
+input[type="checkbox"][readonly] {
+    pointer-events: none;
+}

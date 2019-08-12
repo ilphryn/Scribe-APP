@@ -1,0 +1,137 @@
+<div class="contain">
+    <div class="row">
+        <div class="nav flex-column nav-pills col-md-2" id="v-pills-tab">
+            <a class="nav-link active" id="v-pills-item1-tab" data-toggle="pill" href="#v-pills-menu1">Signalisation
+                Mail</a>
+            <a class="nav-link" id="v-pills-profile-tab" data-toggle="pill" href="#v-pills-menu2">Hotline
+                Intervenant</a>
+            <a class="nav-link" id="v-pills-messages-tab" data-toggle="pill" href="#v-pills-menu3">Incident Réseau</a>
+        </div>
+        <div class="tab-content col-md-10" id="v-pills-tabContent">
+            <div class="tab-pane fade show active" id="v-pills-menu1">
+                <nav>
+                    <div class="nav nav-tabs" id="nav-tab">
+                        <a class="nav-item nav-link active" id="nav-home-tab" data-toggle="tab" href="#nav-cause">Cause</a>
+                        <a class="nav-item nav-link" id="nav-profile-tab" data-toggle="tab" href="#nav-destinataire">Destinataire</a>
+                        <a class="nav-item nav-link" id="nav-contact-tab" data-toggle="tab" href="#nav-mention">Mention</a>
+                        <a class="nav-item nav-link" id="nav-contact-tab" data-toggle="tab" href="#nav-origine">Origine</a>
+                        <a class="nav-item nav-link" id="nav-contact-tab" data-toggle="tab" href="#nav-remontee">Remontée</a>
+                        <a class="nav-item nav-link" id="nav-contact-tab" data-toggle="tab" href="#nav-typeReclamation">Type Réclamation</a>
+                    </div>
+                </nav>
+                <div class="tab-content" id="nav-tabContent">
+                    <div class="tab-pane fade show active" id="nav-cause">cause</div>
+                    <div class="tab-pane fade" id="nav-destinataire">Destinataire</div>
+
+                    <div class="tab-pane fade" id="nav-mention">
+
+                        <table class="table table-striped col-md-7">
+                            <thead>
+                                <tr>
+                                    <th>Libellé</th>
+                                    <th class="text-center">Etat</th>
+                                    <th class="text-right">
+                                        <div>
+                                            <button type="submit" class="btn btn-outline-secondary btn-sm" data-toggle="modal" data-target="#dataSettingModal">
+                                                <fa-icon [icon]=faPlusSquare></fa-icon>    Ajouter
+                                            </button>
+                                        </div>
+                                    </th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr *ngFor="let mention of mentions">
+                                    <td>{{ mention.libelle_mention }}</td>
+                                    <td class="text-center">
+                                        <div class="custom-control custom-checkbox">
+                                            <input class="form-check-input" type="checkbox" [checked]="mention.etat_mention" readonly />
+                                        </div>
+                                    </td>
+                                    <td class="text-right"><button class="btn btn-default" type="button" (click)="editMention()" title="Modifier">
+                                            <fa-icon [icon]=faEdit></fa-icon>
+                                        </button>
+                                        <button class="btn btn-default" type="button" (click)="delMention()" title="Supprimer">
+                                            <fa-icon [icon]=faTrashAlt></fa-icon>
+                                        </button></td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div class="tab-pane fade" id="nav-origine">Origin</div>
+                    <div class="tab-pane fade" id="nav-remontee">Remon</div>
+                    <div class="tab-pane fade" id="nav-typeReclamation">Type R</div>
+                </div>
+
+            </div>
+            <div class="tab-pane fade" id="v-pills-menu2">
+                <nav>
+                    <div class="nav nav-tabs" id="nav-tab">
+                        <a class="nav-item nav-link active" id="nav-home-tab" data-toggle="tab" href="#nav-acteur">Acteur</a>
+                        <a class="nav-item nav-link" id="nav-profile-tab" data-toggle="tab" href="#nav-action">Action
+                            Corrective</a>
+                        <a class="nav-item nav-link" id="nav-profile-tab" data-toggle="tab" href="#nav-action">Activité</a>
+                        <a class="nav-item nav-link" id="nav-contact-tab" data-toggle="tab" href="#nav-prestataire">Prestataire</a>
+                        <a class="nav-item nav-link" id="nav-contact-tab" data-toggle="tab" href="#nav-segment">Segment</a>
+                        <a class="nav-item nav-link" id="nav-contact-tab" data-toggle="tab" href="#nav-signalisation">Signalisation</a>
+                        <a class="nav-item nav-link" id="nav-contact-tab" data-toggle="tab" href="#nav-zone">Zone
+                            d'intervention</a>
+                    </div>
+                </nav>
+                <div class="tab-content" id="nav-tabContent">
+                    <div class="tab-pane fade show active" id="nav-acteur">Actor</div>
+                    <div class="tab-pane fade" id="nav-action">Action</div>
+                    <div class="tab-pane fade" id="nav-activite">Activity</div>
+                    <div class="tab-pane fade" id="nav-prestataire">Prestataire</div>
+                    <div class="tab-pane fade" id="nav-segment">Segment</div>
+                    <div class="tab-pane fade" id="nav-signalisation">Signalisation</div>
+                    <div class="tab-pane fade" id="nav-zone">Zone</div>
+                </div>
+            </div>
+            <div class="tab-pane fade" id="v-pills-menu3">
+                <nav>
+                    <div class="nav nav-tabs" id="nav-tab">
+                        <a class="nav-item nav-link active" id="nav-home-tab" data-toggle="tab" href="#nav-acteurIncident">Acteur</a>
+                        <a class="nav-item nav-link" id="nav-profile-tab" data-toggle="tab" href="#nav-motif">Motif</a>
+                        <a class="nav-item nav-link" id="nav-profile-tab" data-toggle="tab" href="#nav-typeIncident">Type d'incident</a>
+                        <a class="nav-item nav-link" id="nav-contact-tab" data-toggle="tab" href="#nav-zoneIncident">Zone d'Impact</a>
+                    </div>
+                </nav>
+                <div class="tab-content" id="nav-tabContent">
+                    <div class="tab-pane fade show active" id="nav-acteurIncident">Actor incident</div>
+                    <div class="tab-pane fade" id="nav-motif">motif</div>
+                    <div class="tab-pane fade" id="nav-typeIncident">Qualification incident</div>
+                    <div class="tab-pane fade" id="nav-zoneIncident">Zone d'impcy</div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Modal -->
+<div class="modal fade" id="dataSettingModal" tabindex="-1">
+    <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="dataSettingModalTitle">Ajouter Mention</h5>
+                <button type="button" class="close" data-dismiss="modal"><span>&times;</span></button>
+            </div>
+            <div class="modal-body">
+                <form class="form-row justify-content-md-center">
+                    <div class="form-group  col-md-8">
+                        <label>Libellé</label>
+                        <input type="text" class="form-control" placeholder="...">
+                    </div>
+                    <div class="form-check align-self-center pt-2 m-1">
+                        <input type="checkbox" class="form-check-input" checked>
+                        <label class="form-check-label">Etat Actif</label>
+                    </div>
+                </form>
+
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-success">Enregistrer</button>
+                <button type="button" class="btn btn-secondary" data-dismiss="modal">Annuler</button>
+            </div>
+        </div>
+    </div>
+</div>

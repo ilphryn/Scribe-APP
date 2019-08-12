@@ -1,0 +1,87 @@
+.container {
+    width: 85%;
+    max-width: 85%;
+    margin-right: 5%;
+    margin-left: 10%;
+}
+
+#topinfo {
+    margin-left: 0px;
+    margin-top: 10px;
+    margin-bottom: 5px;
+    font-size: 16px;
+    font-weight: 600;
+    color: #2f353a;
+    text-align: right;
+}
+
+label {
+    margin-bottom: 0.2rem;
+    /* color: #2f353a; */
+    color: #76120A;
+    font-weight: 600;
+    font-family: "montserrat_lightregular";
+}
+
+.mytextarea {
+    height: 90px;
+}
+
+.mytextarea-2 {
+    height: 50px;
+}
+
+.signform .form-btn {
+    position: absolute;
+    right: 0%;
+}
+
+.origingroup {
+    background-color: #fdf5e7;
+    border-radius: 5px;
+    padding: 5px 20px;
+    padding-top: 20px;
+    border: solid grey 2px;
+}
+
+.dategroup {
+    background-color: #fdf5e7;
+    border-radius: 5px;
+    padding: 5px 20px;
+    padding-top: 20px;
+    border: solid grey 2px;
+    margin-top: 50px;
+}
+
+.maingroup {
+    margin-left: 30px;
+}
+
+.maingroup label {
+    color: #2f353a;
+}
+
+
+/* Bouton */
+
+.btnform {
+    justify-content: end;
+    margin-right: 0px;
+}
+
+.signform button {
+    margin-left: 10px;
+}
+
+.signform .btnsubmit:hover {
+    background-color: #48C9B0;
+    font-weight: 600;
+    border: none;
+}
+
+.signform .btncancel:hover {
+    background-color: #E74C3C;
+    color: #ffffff;
+    border: none;
+    font-weight: 600;
+}
